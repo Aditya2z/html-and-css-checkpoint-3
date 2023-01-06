@@ -78,6 +78,7 @@ img{
     width: 100%;
     height: auto;
 }
+/* Headings */
 h1{
     font-size: 48px;
     font-weight: 900;
@@ -100,6 +101,11 @@ h4{
     font-weight: bold;
     color: var(--heading-col);
     margin: 20px 0px;
+}
+h5{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--heading-col);
 }
 /* Container */
 .container-80{
@@ -124,6 +130,9 @@ h4{
 .flex-10{
     flex: 0 1 10%;
 }
+.flex-30{
+    flex: 0 1 30%;
+}
 .flex-31{
     flex: 0 1 31%;
 }
@@ -132,6 +141,15 @@ h4{
 }
 .flex-50{
     flex: 0 1 50%;
+}
+.flex-60{
+    flex: 0 1 60%;
+}
+.flex-70{
+    flex: 0 1 70%;
+}
+.flex-70-overflow{
+    flex: 0 0 70%;
 }
 /* Buttons */
 .btn{
@@ -163,7 +181,7 @@ h4{
 .secondary-btn{
     background-color: white;
     color: var(--tertiary-bg);
-    border: 1px solid var(--tertiary-bg);
+    border: 2px solid var(--tertiary-bg);
     width: 120px;
     height: 40px;
 }
@@ -178,6 +196,7 @@ h4{
     font-size: 12px;
     font-weight: 400;
     color: gray;
+    margin: 10px 0;
 }
 
 /* General styles End*/
@@ -285,5 +304,116 @@ color: white;
 .services .fa-solid{
     font-size: 40px;
 }
-
+/* Cases Section */
+.cases{
+    height: 100vh;
+    background-color: var(--secondary-bg);
+    overflow: hidden;
+}
+.cases .btn{
+    background: transparent;
+}
+.cases .image-swapper{
+    left:51%;
+    width: 50%;
+}
+.cases figure{
+    margin: 5px;
+}
+/* Testimonials Section */
+.testimonials{
+    height: 80vh;
+    padding: 100px 0;
+}
+.next{
+    color: gray;
+    font-size: 16px;
+}
+.testimony{
+    height: 60%;
+    padding: 0 15%;
+}
+.testimony .pic{
+    height: 100px;
+    width: 100px;
+}
+.testimony blockquote{
+    text-align: center;
+    font-weight: 600;
+    color: var(--heading-col);
+}
+.fa-star{
+    color: #FBBA42;
+}
+.testimony strong{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-bg);
+}
+/* Recent News Section */
+.news{
+    height: 100vh;
+    padding: 100px 0px;
+}
+.news h2{
+    text-align: center;
+}
+.news section{
+    margin-top: 50px;
+}
+.news article{
+    background-color: var(--secondary-bg);
+    height: 300px;
+}
+.news figcaption{
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--tertiary-bg);
+    margin: 0px 20px;
+}
+.news h5,time{
+    margin: 10px 20px;
+}
+.news time{
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(189, 187, 187);
+}
+/* Call To Action Section */
+.cta{
+    background-color: var(--primary-bg);
+    height: 40vh;
+}
+.cta h3,.text{
+    color: white;
+    line-height: 1.2;
+}
+.cta form div{
+    margin: 20px 0px;
+}
+.cta .bg{
+    margin: 0 10px;
+    border-radius: 5px;
+    height: 40px;
+    background-color: var(--primary-bg);
+    border: none;
+    border: thin solid rgba(255, 255, 255, 0.2);
+    padding: 0px 10px;
+}
+.cta form input,::-webkit-input-placeholder{
+    color: white;
+}
+.cta ::-webkit-input-placeholder{
+    font-size: 12px;
+}
+.cta select{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+}
+.cta .btn{
+    margin: 0 10px;
+}
 /* Main Style End */
+
+/* Footer Style Start */
