@@ -51,7 +51,10 @@ table {
 
 /* Variables */
 :root{
-    
+    --primary-bg: #012D5B;
+    --secondary-bg:#F6F9FE;
+    --tertiary-bg:#FD656B;
+    --heading-col:#191D34;
 }
 /* My Resets */
 *,
@@ -60,9 +63,227 @@ table {
     box-sizing: border-box;
 }
 
-/* General styles*/
+/* General styles Start*/
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: -0.5px;
 }
+a{
+    text-decoration: none;
+    
+}
+img{
+    width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--primary-bg);
+    line-height: 1.3;
+    letter-spacing: -1px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--heading-col);
+}
+h3{
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--heading-col);
+}
+h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--heading-col);
+    margin: 20px 0px;
+}
+/* Container */
+.container-80{
+    max-width: 80%;
+    margin: 0 auto;
+    height: inherit;
+}
+.container-60{
+    max-width: 60%;
+    margin: 0 auto;
+    height: inherit;
+}
+/* Flex */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-10{
+    flex: 0 1 10%;
+}
+.flex-31{
+    flex: 0 1 31%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+/* Buttons */
+.btn{
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+}
+.primary-btn{
+    text-transform: uppercase;
+    background-color: var(--tertiary-bg);
+    color: white;
+    width: 140px;
+    height: 40px;
+}
+.primary-btn a{
+    color: white;
+    font-size: 10px;
+}
+.body-btn{
+    margin-top: 50px;
+}
+.secondary-btn{
+    background-color: white;
+    color: var(--tertiary-bg);
+    border: 1px solid var(--tertiary-bg);
+    width: 120px;
+    height: 40px;
+}
+.tertiary-btn{
+    justify-content: flex-start;
+    padding: 0;
+    font-size: 12px;
+    height: 12px;
+}
+/* text */
+.text{
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+
+/* General styles End*/
+
+/* Header Style Start */
+
+/* Brand Profile */
+.profile{
+background-color: var(--primary-bg);
+font-size: 12px;
+padding: 10px 0px;
+color: white;
+}
+.profile a{
+    color: white;
+}
+/* Navigation Bar */
+.navbar{
+    padding: 20px 0;
+}
+.navbar .page{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary-bg);
+}
+.brand{
+    height: 20px;
+}
+
+/* Header Style End */
+
+/* Main Style Start */
+
+/* Hero Section*/
+.hero{
+    background: url(../media/hero/h1_hero.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+.hero strong{
+    color: var(--tertiary-bg);
+    font-size: 14px;
+}
+/* About Section */
+.about{
+    background-color: var(--secondary-bg);
+    padding: 100px 0px;
+}
+.about article{
+    height: 300px;
+    align-items: flex-start;
+}
+.article-3{
+    padding: 20px 30px 40px 30px; 
+    border: 3px solid var(--tertiary-bg);
+    background-color: white;
+}
+.article-3 hr{
+    border: none;
+    border-bottom: 3px solid var(--tertiary-bg);
+    width: 40%;
+    margin-left: 0;
+}
+.about figure{
+    width: 100%;
+    height: auto;
+}
+.fa-forward{
+    font-size: 6px;
+    margin-left: 4px;
+    align-self:center;
+}
+/* Trust Section */
+.trust{
+    height: 100vh;
+    padding: 100px 0;
+}
+.trust .container-60{
+    background: url(../media/team/wetrusted.jpg) no-repeat;
+    background-size: 65% 70%;
+    justify-content: flex-end;
+}
+.trust article{
+    margin: 0 0% 10% 0;
+    height: 55%;
+    padding: 40px;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+/* Services Section */
+.services{
+    padding-bottom:100px;
+}
+.services section{
+    margin-top: 80px;
+}
+.services article{
+    height: 280px;
+    padding: 50px 30px;
+    background-color: var(--secondary-bg);
+    text-align: center;
+}
+.services .fa-solid{
+    font-size: 40px;
+}
+
+/* Main Style End */
