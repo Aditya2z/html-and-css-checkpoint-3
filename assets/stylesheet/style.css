@@ -54,6 +54,7 @@ table {
     --primary-bg: #012D5B;
     --secondary-bg:#F6F9FE;
     --tertiary-bg:#FD656B;
+    --quaternary-bg:#F8FAFE;
     --heading-col:#191D34;
 }
 /* My Resets */
@@ -71,8 +72,7 @@ body{
     letter-spacing: -0.5px;
 }
 a{
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 img{
     width: 100%;
@@ -85,6 +85,13 @@ h1{
     color: var(--primary-bg);
     line-height: 1.3;
     letter-spacing: -1px;
+}
+.h1-type2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 800;
 }
 h2{
     font-size: 40px;
@@ -103,6 +110,11 @@ h4{
     margin: 20px 0px;
 }
 h5{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--heading-col);
+}
+h6{
     font-size: 14px;
     font-weight: 600;
     color: var(--heading-col);
@@ -129,6 +141,12 @@ h5{
 }
 .flex-10{
     flex: 0 1 10%;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-25{
+    flex: 0 1 25%;
 }
 .flex-30{
     flex: 0 1 30%;
@@ -171,6 +189,7 @@ h5{
     width: 140px;
     height: 40px;
 }
+
 .primary-btn a{
     color: white;
     font-size: 10px;
@@ -201,6 +220,7 @@ h5{
 
 /* General styles End*/
 
+/* HOME PAGE STYLE START*/
 /* Header Style Start */
 
 /* Brand Profile */
@@ -217,6 +237,9 @@ color: white;
 .navbar{
     padding: 20px 0;
 }
+.navbar .container-80{
+    align-items: baseline;
+}
 .navbar .page{
     text-transform: uppercase;
     font-size: 12px;
@@ -224,7 +247,8 @@ color: white;
     color: var(--primary-bg);
 }
 .brand{
-    height: 20px;
+    height: 10px;
+    width: 100px;
 }
 
 /* Header Style End */
@@ -276,17 +300,27 @@ color: white;
     padding: 100px 0;
 }
 .trust .container-60{
-    background: url(../media/team/wetrusted.jpg) no-repeat;
-    background-size: 65% 70%;
-    justify-content: flex-end;
+    align-items: flex-start;
+}
+.trust figure{
+    width: 60%;
+    height: 65%;
+}
+.trust figure img{
+    height: 100%;
 }
 .trust article{
-    margin: 0 0% 10% 0;
-    height: 55%;
+    height: 50%;
     padding: 40px;
-    justify-content: space-around;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    left: -10%;
+    bottom: -15%;
+    z-index: 2;
+}
+.trust article .primary-btn{
+    margin-top: 35px;
 }
 /* Services Section */
 .services{
@@ -298,7 +332,7 @@ color: white;
 .services article{
     height: 280px;
     padding: 50px 30px;
-    background-color: var(--secondary-bg);
+    background-color: var(--quaternary-bg);
     text-align: center;
 }
 .services .fa-solid{
@@ -331,7 +365,7 @@ color: white;
 }
 .testimony{
     height: 60%;
-    padding: 0 15%;
+    padding: 0 14%;
 }
 .testimony .pic{
     height: 100px;
@@ -362,7 +396,7 @@ color: white;
     margin-top: 50px;
 }
 .news article{
-    background-color: var(--secondary-bg);
+    background-color: var(--quaternary-bg);
     height: 300px;
 }
 .news figcaption{
@@ -371,7 +405,7 @@ color: white;
     color: var(--tertiary-bg);
     margin: 0px 20px;
 }
-.news h5,time{
+.news h6,time{
     margin: 10px 20px;
 }
 .news time{
@@ -382,11 +416,16 @@ color: white;
 /* Call To Action Section */
 .cta{
     background-color: var(--primary-bg);
-    height: 40vh;
+    height: 50vh;
+    padding: 50px;
 }
-.cta h3,.text{
+.cta .container-60{
+    align-items: flex-start;
+}
+.cta h3,.cta .text{
+    margin-top: 10px;
     color: white;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 .cta form div{
     margin: 20px 0px;
@@ -417,3 +456,218 @@ color: white;
 /* Main Style End */
 
 /* Footer Style Start */
+.footer{
+    height: auto;
+    padding-top: 100px;
+    background-color:var(--quaternary-bg);
+}
+.bottom-nav{
+    height: 75%;
+    align-items: flex-start;
+}
+.footer article{
+    align-items: flex-start;
+    height: 60%;
+}
+.footer article figure{
+    width: 60%;
+}
+.footer .social li a{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(61, 60, 60);
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    color: white;
+}
+.footer nav,.address{
+    height: 60%;
+    align-items: flex-start;
+}
+.footer ul{
+    align-items: flex-start;
+    height: 80%;
+}
+.footer h6{
+    color: var(--primary-bg);
+    margin-bottom: 10px;
+}
+.footer hr{
+    margin-top: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.copyright{
+    padding: 20px 0 30px 0;
+    text-align: center;
+    word-spacing: 2px;
+}
+.copyright strong{
+    color: var(--tertiary-bg);
+}
+.heart{
+    font-size: 16px;
+}
+/* Footer Style End */
+/* HOME PAGE STYLE END */
+
+/* ABOUT PAGE STYLE START */
+/* About-Hero Section */
+.about-hero{
+    background: url(../media/hero/about_hero.jpg);
+    background-size: 100% 100%;
+    height: 30vh;
+}
+/* About-Trust Section */
+.about-trust .container-60{
+    font-size: 0;
+    align-items: flex-end;
+}
+.about-trust{
+    padding-bottom: 0;
+    height: auto;
+}
+/* ABOUT PAGE STYLE END */
+
+/* SERVICES PAGE STYLE START */
+/* Services-Hero Section */
+.services-hero{
+    background: url(../media/hero/services_hero.jpg);
+    background-size: 100% 100%;
+    height: 30vh;
+}
+/*Services Page-Services Section */
+.services-services{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+/* SERVICES PAGE STYLE END */
+
+/* CASES PAGE STYLE START */
+/* Cases-Hero Section */
+.case-hero{
+    background: url(../media/hero/cases_hero.jpg);
+    background-size: 100% 100%;
+    height: 30vh;
+}
+/* Cases- case-completed Section */
+.case-completed{
+    padding: 100px 0;
+}
+.case-completed .container-60{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.case-completed figure{
+    height: 316px;
+    font-size: 0;
+    margin: 15px 0;
+}
+.case-completed img{
+    height: 100%;
+}
+.case-completed article{
+    padding: 5%;
+    height: 25%;
+    width: 80%;
+    position: relative;
+    top: -25%;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+}
+.case-completed h5{
+    margin: 0;
+    margin-bottom: 3px;
+    
+}
+.case-completed p{
+    margin: 0;
+    font-weight: 500;
+}
+/* CASES PAGE STYLE END */
+.blog-hero{
+    background: url(../media/hero/blog_hero.jpg);
+    background-size: 100% 100%;
+    height: 30vh;
+}
+/* BLOG PAGE STYLE START */
+
+/* BLOG PAGE STYLE END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hovering Effect */
+.primary-btn:hover{
+    color: var(--tertiary-bg);
+    background-color: white;
+    border: 1px solid var(--tertiary-bg);
+}
+.primary-btn:hover a{
+    color: var(--tertiary-bg);
+}
+a:hover{
+    color: var(--tertiary-bg);
+}
+.page:hover{
+    color: var(--tertiary-bg);
+}
+.footer .social li a:hover{
+    background-color: white;
+    color: var(--tertiary-bg);
+    border: 1px solid var(--tertiary-bg);
+}
+.secondary-btn:hover{
+    background-color: var(--tertiary-bg);
+    color: white;
+}
+.tertiary-btn:hover{
+    font-size: 14px;
+}
+.next:hover{
+    font-size: 150%;
+}
