@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+.news time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -55,6 +55,7 @@ table {
     --secondary-bg:#F6F9FE;
     --tertiary-bg:#FD656B;
     --quaternary-bg:#F8FAFE;
+    --quinary-bg:#FBF9FF;
     --heading-col:#191D34;
 }
 /* My Resets */
@@ -155,6 +156,9 @@ h6{
 }
 .flex-40{
     flex: 0 1 40%;
+}
+.flex-48{
+    flex: 0 1 48%;
 }
 .flex-50{
     flex: 0 1 50%;
@@ -410,7 +414,7 @@ color: white;
     color: var(--tertiary-bg);
     margin: 0px 20px;
 }
-.news h6,time{
+.news h6,.news time{
     margin: 10px 20px;
 }
 .news time{
@@ -444,7 +448,7 @@ color: white;
     border: thin solid rgba(255, 255, 255, 0.2);
     padding: 0px 10px;
 }
-.cta form input,::-webkit-input-placeholder{
+.cta form input,.cta ::-webkit-input-placeholder{
     color: white;
 }
 .cta ::-webkit-input-placeholder{
@@ -598,6 +602,7 @@ color: white;
 /* CASES PAGE STYLE END */
 
 /* BLOG PAGE STYLE START */
+/* Blog-Hero Section */
 .blog-hero{
     background: url(../media/hero/blog_hero.jpg);
     background-size: 100% 100%;
@@ -606,6 +611,10 @@ color: white;
 .blog-history{
     padding: 100px 0px;
 }
+.blog-history .container-60{
+    align-items: stretch;
+}
+/* Blog Column */
 .blog{
     height: 460px;
     box-shadow: 5px 5px 10px 0 rgba(141, 141, 141, 0.1), 
@@ -627,7 +636,8 @@ color: white;
     color: white;
     font-size: 12px;
     position: relative;
-    top: -70px;
+    top: -60px;
+    left: 20px;
     z-index: 2;
 }
 .image-holder time strong{
@@ -669,11 +679,142 @@ color: white;
 .blog-history .tertiary-btn:hover{
     background-color: var(--quaternary-bg);
 }
+.blog-history aside{
+    margin-left: 20px;
+    height: 100%;
+}
+/* Aside Column */
+.aside-col{
+    padding: 20px;
+    background-color: var(--quinary-bg);
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+.search-bar{
+    height: 33px;
+    width: 100%;
+}
+.input{
+    padding: 10px;
+    border: none;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,.1), -1px -1px 1px 0 rgba(0, 0, 0, 0.1);
+    font-size: 10px;
+    font-weight: 500;
+    width: 85%;
+    height: 100%;
+}
+.fa-magnifying-glass{
+    width: 15%;
+    background-color: var(--tertiary-bg);
+    color: white;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.search-btn{
+    border: 1px solid rgba(253, 101, 107, .5);
+    border-radius: 0px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.blog-history aside ul{
+    width: 100%;
+}
+.blog-history aside li{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 4px 0;
+    color: #637281;
+}
+.blog-history aside .heading{
+    margin-bottom: 30px;
+}
+.blog-history aside hr{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+}
+.post figure{
+    margin-right: 10px;
+}
+.post .sub-heading{
+    align-items: flex-start;
+}
+.post .sub-heading strong{
+    color: var(--heading-col);
+    font-size: 11px;
+    font-weight: 700;
+}
+.post time{
+    font-size: 10px;
+}
+.tags button{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 8px;
+    padding: 3px 12px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.insta-feed{
+    flex-wrap: wrap;
+}
+.newsletter{
+    margin-bottom: 10px;
+}
+.newsletter input{
+    width: 100%;
+}
 /* BLOG PAGE STYLE END */
 
-
-
-
+/* CONTACT PAGE STYLE START */
+/* Contact-Hero Section */
+.contact-hero{
+    background: url(../media/hero/contact_hero.jpg);
+    background-size: 100% 100%;
+    height: 40vh;
+}
+.contact-info{
+    padding: 100px 0;
+}
+.contact-info figure{
+    width: 100%;
+    font-size: 0;
+    margin-bottom: 40px;
+}
+.contact-info iframe{
+    width: 100%;
+}
+.contact-form input,.contact-form textarea{
+    margin: 10px 0;
+    width: 100%;
+}
+.contact-form textarea{
+    width: 100%;
+    height: 120px;
+}
+.contact-form .search-btn{
+    width: 20%;
+}
+.contact-address{
+    padding: 10px;
+    margin-left: 50px;
+}
+.contact-address .address{
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-address .address .sub-heading{
+    margin-left: 10px;
+}
+.contact-address .address .sub-heading strong{
+    color: var(--heading-col);
+    font-size: 12px;
+    font-weight: 600;
+}
+/* CONTACT PAGE STYLE END */
 
 
 
